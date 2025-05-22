@@ -59,6 +59,13 @@ git clone https://github.com/yuchenlin/rebiber.git
 cd rebiber/
 pip install -e .
 ```
+
+OR 
+
+```bash
+uv tool install https://github.com/yuchenlin/rebiber
+```
+
 If you would like to use the latest github version with more bug fixes, please use the second installation method.
 
 ## Usage（v1.1.3 and v1.2.0）

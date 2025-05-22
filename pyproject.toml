@@ -1,0 +1,28 @@
+[project]
+name = "rebiber"
+authors = [
+    { name = "Bill Yuchen Lin", email = "yuchen.lin@usc.edu" },
+    { name = "Yang Qiao" },
+]
+description = "A tool for normalizing bibtex with official info."
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = ["bibtexparser", "tqdm"]
+version = "1.2.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/yuchenlin/rebiber"
+
+[project.scripts]
+rebiber = "rebiber.normalize:main"
+bib2json = "rebiber.bib2json:main"
+
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
